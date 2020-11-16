@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lakshmi"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9">
+
+        <Button
+            android:id="@+id/addBiodatabutton"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="114dp"
+            android:layout_marginStart="8dp"
+            android:alpha="0.7"
+            android:backgroundTint="@color/fui_bgTwitter"
+            android:fadingEdge="vertical"
+            android:fontFamily="@font/almendra"
+            android:onClick="onClickButton"
+            android:padding="1px"
+            android:shadowColor="@color/cardview_shadow_start_color"
+            android:text="Add a new Profile"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+        <Button
+            android:id="@+id/viewBiodatabutton"
+            android:layout_width="0dp"
+            android:layout_height="114dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="0.5"
+            android:alpha="0.7"
+            android:backgroundTint="@color/fui_bgTwitter"
+            android:fadingEdge="vertical"
+            android:fontFamily="@font/almendra"
+            android:onClick="onClickButton"
+            android:padding="1px"
+            android:shadowColor="@color/cardview_shadow_start_color"
+            android:text="View Profiles"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
